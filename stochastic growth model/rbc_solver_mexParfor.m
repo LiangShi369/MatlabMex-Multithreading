@@ -20,15 +20,10 @@ ev = beta*pdfz*v;
 
   parfor iz = 1:nz  
 
-        % evv = ev(iz,:);
-
     for ik = 1:nk
-        
-        % c = c0(iz,ik) - kpgrid;
-        % ind = c > 0;  
-        % v0(iz,ik) = max( c(ind).^(1-eta)/(1-eta) + evv(ind) );
 
         tmpmax = - Inf ;
+        
         for i = 1:nk
             c1 = c0(iz,ik) - kpgrid(i);
             if c1 < 0; break; end
@@ -54,6 +49,7 @@ totaltime = toc(timer);
 avgtime   = totaltime/(its-1);
 
 fprintf('# its%4.0f ~Time %8.8fs ~Avgtime %8.8fs \n', its-1, totaltime, avgtime);
+
 end
 
 
