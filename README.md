@@ -1,4 +1,4 @@
-# MatlabMex-Multithreading
+# MatlabMex-Multithreading 2024 version
 Simple macroeconomics models solved on CPU and GPU-based multithreading, using Matlab Mex Code generation.
 The model discussed are a classic stochastic growth model and a sovereign default model (Arellano, 2008).
 
